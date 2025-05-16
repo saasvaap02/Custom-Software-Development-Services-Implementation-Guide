@@ -32,23 +32,39 @@ Next, set up your development environment. Depending on your tech stack, this mi
 •	Initializing a database (e.g., PostgreSQL, MongoDB)
 # Step 4: Implement Core Functionality
 Start by implementing the core features of your software. This can include setting up routes, controllers, and models for your backend.
-Example (Node.js/Express Setup):
+E
+xample (Node.js/Express Setup):
+
 const express = require('express');
+
 const app = express();
+
 app.get('/api/v1/features', (req, res) => {
+
     res.send('List of Features');
+    
 });
+
 app.listen(3000, () => {
+
     console.log('Server is running on port 3000');
+    
 });
+
 Ensure that you align your code with the features defined in Step 2.
 # Step 5: Test and Debug
 Testing is a crucial part of custom software development services. Use testing frameworks like Jest, Mocha, or PyTest to ensure that your code works as expected. Write unit tests for each core feature you implement.
+
 Example (Jest Test):
+
 const sum = (a, b) => a + b;
+
 test('adds 1 + 2 to equal 3', () => {
+
     expect(sum(1, 2)).toBe(3);
+    
 });
+
 Run tests frequently during the development phase to catch errors early.
 # Step 6: Deployment
 After the software has been developed and thoroughly tested, you can deploy it to a hosting platform like AWS, Azure, or Heroku. Make sure to follow best practices for deployment, including setting up environment variables and monitoring your application.
